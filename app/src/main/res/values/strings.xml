@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CycleBikes</string>
+    <string name="refresh">Oppdater</string>
+
+    <plurals name="available_bikes">
+        <item quantity="one">%d ledig sykkel</item>
+        <item quantity="other">%d ledige sykler</item>
+    </plurals>
+
+    <plurals name="available_docks">
+        <item quantity="one">%d ledig plass for tilbakelevering</item>
+        <item quantity="other">%d ledige plasser for tilbakelevering</item>
+    </plurals>
+
+<!-- Error/success messages -->
+    <string name="data_retrieved">Data oppdatert</string>
+    <string name="no_data">Ingen data funnet</string>
+    <string name="inconsistent_data">Inkonsistente data</string>
+    <string name="network_error">Nettverkstrøbbel</string>
+
+</resources>

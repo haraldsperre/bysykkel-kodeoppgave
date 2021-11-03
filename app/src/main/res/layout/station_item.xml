@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="station"
+            type="com.example.cyclebikes.model.Station" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/station_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/station_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@{station.name}"
+                />
+
+            <TextView
+                android:id="@+id/available_bikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:availableBikes="@{station}"/>
+
+            <TextView
+                android:id="@+id/available_racks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:availableRacks="@{station}" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
