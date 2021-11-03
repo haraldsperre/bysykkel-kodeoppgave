@@ -21,3 +21,6 @@ Applikasjonen består av én skjerm med:
   - `activity_main.xml` er en FragmentContainer som inneholder hele UIet i appen. Den peker videre på `fragment_locator.xml`
   - `fragment_locator.xml` inneholder knapp for å oppdatere data, RecyclerView med liste av stasjoner (som igjen inneholder `station_item.xml`) og en ProgressBar/laste-indikator som `LocatorFragment`-kontrolleren setter synlig/usynlig basert på status av nettverks-kall.
   - `station_item.xml` inneholder, for hvert enkelt Stasjon-objekt i lista, et CardView med navn, antall tilgjengelige sykler og antall tilgjengelige plasser for å sette fra seg sykkel
+
+## Kjøre applikasjonen
+Last ned (og evt pakk ut) koden, naviger til rot-mappen `CycleBikes` og kjør `gradlew assembleDebug` for å bygge en `.apk`-fil. Eventuelt åpne prosjektet i Android Studio og kjør applikasjonen eller bygg APK derfra.
